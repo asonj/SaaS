@@ -31,6 +31,8 @@ gem 'jbuilder', '2.5.0'
 #Use Twitter Bootstrap Library for front-end UI and Layout
 gem 'bootstrap-sass', '3.3.7'
 
+#use Font Awesome Sass Gem for adding icons
+gem 'font-awesome-sass', '4.6.2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
