@@ -22,16 +22,25 @@
 // Typography styles
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat Alternatives', sans-serif;
+  
 }
 
+.title{
+  font-family: 'Lobster', sans-serif;
+}
 //Background Gradient
 
 .navbar, .home-callout {
     background: #606c88; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
+          
+    border-radius: 0 !important;
+    // background: #16222A; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              
         
 }
 
@@ -41,6 +50,12 @@ h1, h2, h3 {
 
 .navbar{
   border:none;
+}
+
+.navbar-brand{
+  font-family:'Lobster', sans-serif;
+  font-size: 2em;
+  
 }
 
 .navbar-default .navbar-brand,
@@ -58,6 +73,14 @@ h1, h2, h3 {
   color:white;
 }
 
+.navbar-right{
+  font-size: 1.5em;
+}
+
+#title{
+  font-family: 'Lobster',sans-serif;
+  font-size: 4em;
+}
 
 // Home Page Styles
 
@@ -67,3 +90,28 @@ h1, h2, h3 {
   padding-bottom: 100%;
   color:white;
 }
+
+.bannerLogo{
+  font-size: 20em;
+  text-shadow: 5px 10px #2c3e50;
+  &:hover, &:focus{
+    color: #81C784;
+    cursor: pointer;
+  }
+  
+}
+.links h3{
+  font-family: 'Montserrat Alternatives', sans-serif;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+  border: 2px solid white;
+  &:hover, &:focus{
+    background-color: #3f4c6b;
+  }
+}
+
