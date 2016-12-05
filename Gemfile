@@ -40,6 +40,11 @@ gem 'hirb', '0.7.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  
+  # Use sqlite3 as the database for Active Record
+   gem 'sqlite3'
+   
+
 end
 
 group :development do
@@ -52,8 +57,7 @@ group :development do
 end
 
 group :production do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+
   #Use the PostgreSQL gem for Heroku
   gem 'pg', '0.18.4'
 end
