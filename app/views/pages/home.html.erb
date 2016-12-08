@@ -1,21 +1,43 @@
-<div class="home-callout text-center container-fluid">
-    <!--<i class="fa fa-angle-double-right bannerLogo"></i>-->
-    <h1 id="title"> Project DeliverEase</h1>
-    <div class="links">
-        <h3> Integrated accounting, routing, and optimization for your business</h3>
-    
-    </div>
-</div>
-
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    <a class="btn btn-primary btn-lg" href="about" role="button">Learn more</a>
+<div id="heroimage">
+  <div class="home-callout text-center container-fluid">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4slKJS_eiQXzw-CiEZfhxvfzVUmibe-w&callback=initMap">
+    </script>
+      <!--<i class="fa fa-angle-double-right bannerLogo"></i>-->
+      <div class= "mapOverlay">
+        <h1 id="title"> Project DeliverEase</h1>
+        <div class="links">
+            <h3> Integrated accounting, routing, and optimization for your business</h3>
+        </div>
+      </div>
   </div>
-</div>
+  
+  <!--<div class="jumbotron jumbotron-fluid">-->
+  <!--  <div class="container">-->
+  <!--    <h1 class="display-3">Fluid jumbotron</h1>-->
+  <!--    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+  <!--    <a class="btn btn-primary btn-lg" href="about" role="button">Learn more</a>-->
+  <!--  </div>-->
+  <!--</div>-->
+</div>   
 
 <div class ="container home-signup-links">
+   
+    
     <div class="row">
         <div class="col-md-6">
             <div class="well">
